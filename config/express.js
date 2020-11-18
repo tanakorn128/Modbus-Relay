@@ -15,6 +15,7 @@ module.exports = () => {
 
     app.set('views', './app/views');
     app.set('view engine', 'jade');
+    require('../config/modbus');
     require('../app/routes/index.route')(app);
     return app;
 }

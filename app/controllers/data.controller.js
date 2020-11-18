@@ -32,9 +32,13 @@ var render = function(req, res, ) {
 var humidity = function(req, res, ) {
     res.render('humidity');
 };
+var relay = function(req, res, ) {
+    res.render('relay');
+};
 module.exports = {
     addData,
     getData,
     render,
-    humidity
+    humidity,
+    relay
 }

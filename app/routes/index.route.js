@@ -3,5 +3,6 @@ module.exports = (app) => {
     //app.get('/', index.render).post('/addData', index.addData).get('/data', index.getData);
     app.post('/addData', index.addData).get('/getData', index.getData).get('/', index.render);
     app.get('/humidity', index.humidity);
+    app.get('/relay', index.relay);
 
 }
